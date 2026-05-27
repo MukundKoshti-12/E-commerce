@@ -124,18 +124,6 @@ Benefits:
 
 Each microservice is containerized using Docker for portability and consistency.
 
-Build Docker image:
-
-```bash
-docker build -t service-name .
-```
-
-Run container:
-
-```bash
-docker run -p 8080:8080 service-name
-```
-
 ---
 
 ## ☸️ Kubernetes Deployment
@@ -148,13 +136,6 @@ Features:
 - Service management
 - Container orchestration
 - High availability
-
-Deploy services:
-
-```bash
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-```
 
 ---
 
@@ -196,34 +177,6 @@ Ecommerce-Microservices/
 ├── docker/
 ├── kubernetes/
 └── README.md
-```
-
----
-
-## ⚙️ Installation & Setup
-
-### Clone repository
-
-```bash
-git clone https://github.com/your-username/project-name.git
-```
-
-### Navigate to project
-
-```bash
-cd project-name
-```
-
-### Build project
-
-```bash
-mvn clean install
-```
-
-### Run services
-
-```bash
-mvn spring-boot:run
 ```
 
 ---
