@@ -18,6 +18,7 @@ A scalable and cloud-ready E-Commerce application built using a microservices ar
 - Containerization using Docker
 - Deployment using Kubernetes
 - Scalable Microservices Architecture
+- Redis caching
 
 ---
 
@@ -32,10 +33,10 @@ The application follows a Microservices-based architecture:
                   API Gateway Service
                            |
         -------------------------------------
-        |              |                  |
-        ↓              ↓                  ↓
-   User Service   Product Service   Order Service
-        |              |                  |
+        |                                   |
+        ↓                                   ↓
+   User Service                         Product Service
+        |                                   |
         -------------------------------------
                            |
                      Service Discovery
@@ -96,7 +97,6 @@ This project implements JWT-based authentication for securing APIs.
 Features:
 - User login and registration
 - Token generation
-- Role-based authorization
 - Protected endpoints
 - Secure request validation
 
@@ -191,12 +191,10 @@ Ecommerce-Microservices/
 ├── service-discovery/
 ├── user-service/
 ├── product-service/
-├── order-service/
 ├── payment-service/
 ├── email-service/
 ├── docker/
 ├── kubernetes/
-├── screenshots/
 └── README.md
 ```
 
@@ -230,23 +228,10 @@ mvn spring-boot:run
 
 ---
 
-## 📸 Screenshots
-
-Add project screenshots here:
-
-- Home Page
-- Product Listing
-- Cart Page
-- Payment Page
-- Dashboard
-
----
-
 ## 🎯 Future Enhancements
 
 - Recommendation system
 - Product reviews and ratings
-- Redis caching
 - CI/CD pipeline integration
 - Monitoring using Prometheus & Grafana
 - Distributed tracing
@@ -257,9 +242,9 @@ Add project screenshots here:
 
 Mukund Koshti
 
-GitHub: https://github.com/your-github-username
+GitHub: https://github.com/MukundKoshti-12
 
-LinkedIn: https://linkedin.com/in/your-linkedin-profile
+LinkedIn: https://www.linkedin.com/in/mukund-koshti-35b29b271/
 
 ---
 
