@@ -1,0 +1,4 @@
+package com.scaler.productservice.inheritanceExamples;
+
+public class TA {
+}
